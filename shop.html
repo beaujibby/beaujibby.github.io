@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Gallery</title>
+    <title>Catalog</title>
 
     <!-- Lato Font -->
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
@@ -18,177 +18,6 @@
 
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <script type="text/javascript">
-//<![CDATA[
-      var Shopify = Shopify || {};
-      Shopify.shop = "materialize-themes.myshopify.com";
-      Shopify.theme = {"name":"debut","id":133945025,"theme_store_id":796,"role":"main"};
-      Shopify.theme.handle = "null";
-      Shopify.theme.style = {"id":null,"handle":null};
-
-//]]>
-</script><script id="__st">
-//<![CDATA[
-var __st={"a":17758583,"offset":-25200,"reqid":"d74b3bd5-b5c3-4a3f-b1c8-42418bfc78f7","pageurl":"themes.materializecss.com\/pages\/demo","s":"pages-199716225","u":"9844755e78a9","p":"page","rtyp":"page","rid":199716225};
-//]]>
-</script><script src="https://cdn.shopify.com/s/javascripts/shopify_stats.js?v=6" type="text/javascript" async="async"></script>
-<meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/17758583/digital_wallets/dialog" />
-<script src="//cdn.shopify.com/s/assets/themes_support/ga_urchin_forms-668547562549a84f5dfa01ef82607987f85ecbe1c8301faf25059becfa208199.js" defer="defer"></script>
-      <script type="text/javascript">
-        
-      window.ShopifyAnalytics = window.ShopifyAnalytics || {};
-      window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
-      window.ShopifyAnalytics.meta.currency = 'USD';
-      var meta = {"page":{"pageType":"page","resourceType":"page","resourceId":199716225}};
-      for (var attr in meta) {
-        window.ShopifyAnalytics.meta[attr] = meta[attr];
-      }
-    
-      </script>
-
-      <script type="text/javascript">
-        window.ShopifyAnalytics.merchantGoogleAnalytics = function() {
-          
-        };
-      </script>
-
-      <script type="text/javascript" class="analytics">
-        (window.gaDevIds=window.gaDevIds||[]).push('BwiEti');
-        
-
-        (function () {
-          var customDocumentWrite = function(content) {
-            var jquery = null;
-
-            if (window.jQuery) {
-              jquery = window.jQuery;
-            } else if (window.Checkout && window.Checkout.$) {
-              jquery = window.Checkout.$;
-            }
-
-            if (jquery) {
-              jquery('body').append(content);
-            }
-          };
-
-          var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
-          if (trekkie.integrations) {
-            return;
-          }
-          trekkie.methods = [
-            'identify',
-            'page',
-            'ready',
-            'track',
-            'trackForm',
-            'trackLink'
-          ];
-          trekkie.factory = function(method) {
-            return function() {
-              var args = Array.prototype.slice.call(arguments);
-              args.unshift(method);
-              trekkie.push(args);
-              return trekkie;
-            };
-          };
-          for (var i = 0; i < trekkie.methods.length; i++) {
-            var key = trekkie.methods[i];
-            trekkie[key] = trekkie.factory(key);
-          }
-          trekkie.load = function(config) {
-            trekkie.config = config;
-            var script = document.createElement('script');
-            script.type = 'text/javascript';
-            script.onerror = function(e) {
-              (new Image()).src = '//v.shopify.com/internal_errors/track?error=trekkie_load';
-            };
-            script.async = true;
-            script.src = 'https://cdn.shopify.com/s/javascripts/tricorder/trekkie.storefront.min.js?v=2017.03.29.1';
-            var first = document.getElementsByTagName('script')[0];
-            first.parentNode.insertBefore(script, first);
-          };
-          trekkie.load(
-            {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":17758583,"isMerchantRequest":null,"themeId":133945025,"themeCityHash":704718810101822450}},"Performance":{"navigationTimingApiMeasurementsEnabled":true,"navigationTimingApiMeasurementsSampleRate":0.1},"Google Analytics":{"trackingId":"UA-56218128-1","domain":"auto","siteSpeedSampleRate":"10","enhancedEcommerce":true,"doubleClick":true,"includeSearch":true},"Session Attribution":{}}
-          );
-
-          var loaded = false;
-          trekkie.ready(function() {
-            if (loaded) return;
-            loaded = true;
-
-            window.ShopifyAnalytics.lib = window.trekkie;
-            
-      ga('require', 'linker');
-      function addListener(element, type, callback) {
-        if (element.addEventListener) {
-          element.addEventListener(type, callback);
-        }
-        else if (element.attachEvent) {
-          element.attachEvent('on' + type, callback);
-        }
-      }
-      function decorate(event) {
-        event = event || window.event;
-        var target = event.target || event.srcElement;
-        if (target && (target.getAttribute('action') || target.getAttribute('href'))) {
-          ga(function (tracker) {
-            var linkerParam = tracker.get('linkerParam');
-            document.cookie = '_shopify_ga=' + linkerParam + '; ' + 'path=/';
-          });
-        }
-      }
-      addListener(window, 'load', function(){
-        for (var i=0; i < document.forms.length; i++) {
-          var action = document.forms[i].getAttribute('action');
-          if(action && action.indexOf('/cart') >= 0) {
-            addListener(document.forms[i], 'submit', decorate);
-          }
-        }
-        for (var i=0; i < document.links.length; i++) {
-          var href = document.links[i].getAttribute('href');
-          if(href && href.indexOf('/checkout') >= 0) {
-            addListener(document.links[i], 'click', decorate);
-          }
-        }
-      });
-    
-
-            var originalDocumentWrite = document.write;
-            document.write = customDocumentWrite;
-            try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
-            document.write = originalDocumentWrite;
-
-            
-        window.ShopifyAnalytics.lib.page(
-          null,
-          {"pageType":"page","resourceType":"page","resourceId":199716225}
-        );
-      
-            
-          });
-
-          
-      var eventsListenerScript = document.createElement('script');
-      eventsListenerScript.async = true;
-      eventsListenerScript.src = "//cdn.shopify.com/s/assets/shop_events_listener-9410288c486c406bc38edb97003bb123d375112c2b7e037d65afabae7c905e02.js";
-      document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
-    
-        })();
-      </script>
-    
-<script id="apple-pay-shop-capabilities" type="application/json">{"shopId":17758583,"countryCode":"US","currencyCode":"USD","merchantCapabilities":["supports3DS"],"merchantId":"gid:\/\/shopify\/Shop\/17758583","merchantName":"Materialize Themes","requiredBillingContactFields":["postalAddress","email"],"requiredShippingContactFields":["postalAddress","email"],"shippingType":"shipping","supportedNetworks":["visa","masterCard","amex","discover"]}</script>
-<script src="//cdn.shopify.com/s/assets/storefront/express_buttons-f469ae8eee0ec6811e1fa2da5475346aa55c6256c6593abc24d2ba7d22e0233e.js" defer="defer" crossorigin="anonymous" integrity="sha256-9Gmuju4OxoEeH6LaVHU0aqVcYlbGWTq8JNK6fSLgIz4="></script><script>
-//<![CDATA[
-      window.Shopify = window.Shopify || {};
-      window.Shopify.Checkout = window.Shopify.Checkout || {};
-      window.Shopify.Checkout.rememberMeHost = "remember-me.shopifycloud.com";
-      window.Shopify.Checkout.rememberMeAccessToken = "aUUwcW12RDN6bnBIcUJUd1BNU1VEN1Z4bG9ZY01UMDMrYWcxWTJ1c0dodUlIbSsvbmxLMlpKU0VRMGFsVDRqRC0tUjVlVFhweVBVSVh4OEMzTmNCbG9GQT09--f7ffe2d7af66ed3cb5c99cd6dca8d31cb04ed682";
-
-//]]>
-</script>
-
-<meta name="shopify-checkout-api-token" content="6aacc581eb2b41d74f03c38d3c985dba" />
 
 <link rel="stylesheet" media="all" href="//cdn.shopify.com/s/assets/storefront/additional-checkout-buttons-808913e66bb8ca34c54570ae143ad72de7405d257db279c632b910e1babef726.css" />
   <link rel="canonical" href="https://themes.materializecss.com/pages/demo" />
@@ -237,8 +66,8 @@ var __st={"a":17758583,"offset":-25200,"reqid":"d74b3bd5-b5c3-4a3f-b1c8-42418bfc
       </div>
     </nav>
     <ul class="side-nav" id="nav-mobile">
-      <li class="k"><a href="/pages/demo"><i class="material-icons">camera</i>Gallery</a></li>
-      <li><a href="/pages/dark-theme"><i class="material-icons">brightness_3</i>Dark Theme</a></li>
+      <li class="k"><a href="/index.html"><i class="material-icons">camera</i>Home</a></li>
+      <li><a href="/pages/dark-theme"><i class="material-icons">brightness_3</i>Dark</a></li>
       <li><a href="/pages/blog"><i class="material-icons">edit</i>Blog</a></li>
       <li><a href="/pages/docs"><i class="material-icons">school</i>Docs</a></li>
       <li><a href="/pages/full-header"><i class="material-icons">fullscreen</i>Fullscreen Header</a></li>
@@ -260,11 +89,11 @@ var __st={"a":17758583,"offset":-25200,"reqid":"d74b3bd5-b5c3-4a3f-b1c8-42418bfc
               </div>
               <div class="gallery-body">
                 <div class="title-wrapper">
-                  <h3>Aquamarine</h3>
+                  <h3>Sparkletime Fedora</h3>
                   <span class="gj">$29.99</span>
                 </div>
                 <p class="fi">
-Literally venmo before they sold out, DIY heirloom forage polaroid offal yr pop-up selfies health goth. Typewriter scenester hammock truffaut meditation, squid before they sold out polaroid portland tousled taxidermy vice. Listicle butcher thundercats, taxidermy pitchfork next level roof party crucifix narwhal kinfolk you probably haven't heard of them portland small batch.</p>
+Literally Gucci before they sold out, DIY heirloom forage polaroid offal yr pop-up selfies health goth. Typewriter scenester hammock truffaut meditation, squid before they sold out polaroid portland tousled taxidermy vice. Listicle butcher thundercats, taxidermy pitchfork next level roof party crucifix narwhal kinfolk you probably haven't heard of them portland small batch.</p>
                 <p class="fi">
 Ea salvia adipisicing vegan man bun. Flexitarian cupidatat skateboard flannel. Drinking vinegar marfa you probably haven't heard of them consequat post-ironic, shabby chic williamsburg raclette vaporware readymade selfies brunch. Venmo selvage biodiesel marfa. Tbh literally 3 wolf moon, proident elit raclette chambray consequat edison bulb four loko accusamus. Semiotics godard eiusmod, ex esse air plant quinoa vaporware selfies keytar. Actually yuccie ennui flannel single-origin coffee, williamsburg cardigan banjo forage pug distillery tumblr hexagon vinyl occaecat.</p>
 
